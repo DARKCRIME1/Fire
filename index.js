@@ -7,7 +7,7 @@ var express = require('express'),
 const PORT = process.env.PORT || 8080 || 5000 || 3000
 var { color } = require('./lib/color.js')
 
-var mainrouter = require('./main/main'),
+var mainrouter = require('./main/main')
    
 
 var app = express()
