@@ -13,7 +13,7 @@
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#ss *").filter(function() {
+    $("index1.html#list *").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
@@ -27,21 +27,21 @@ $(document).ready(function(){
   <li><a href="#home">Home</a></li>
   
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Film</a>
-    <div class="dropdown-content">
-      <a href="index1.html">Sinhala</a>
-      <a href="#">English</a>
-      <a href="#">Tamil</a>
-    </div>
+  <button onclick="myFunction()" class="dropbtn">FILMS</button>
+  <div id="myInp" class="dropdown-content">
+    <input type="text" placeholder="Search your Film" id="myInput" onkeyup="filterFunction()">
+    <a href="index.html">Sinhala</a>
+   
+    <a href="index.html">English</a>
+    <a href="index.html">Tamil</a>
+    
+    
+    
+  </div>
+</div></li>
     <li><a href="#news">About</a></li
-    <li class="search-container">
-             
-    <form action="/film">
-      <input id="myInput" type="text" placeholder="sonic 2" name="search">
-      <button type="submit">Search</button>
-    </form>
-  </li>
-  </li>
+    
+  
 </ul><br>
          
        
