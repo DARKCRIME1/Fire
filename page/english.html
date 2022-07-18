@@ -8,7 +8,7 @@
   
  </style>
  <style> ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; } li { float: left; } li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; } li a:hover, .dropdown:hover .dropbtn { background-color: red; } li.dropdown { display: inline-block; } .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; } .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; } .dropdown-content a:hover {background-color: #f1f1f1;} .dropdown:hover .dropdown-content { display: block; } </style>
- <script>$(document).ready(function(){ $("#myInput").on("keyup", function() { var value = $(this).val().toLowerCase(); $("#list *").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) }); });});</script>
+ <script>$(document).ready(function(){ $("#myInput").on("keyup", function() { var value = $(this).val().toLowerCase(); $("#ss *").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) }); });});</script>
  </head> 
  <body> 
      
@@ -25,7 +25,7 @@
     <li><a href="about">About</a></li>
     <li class="search-container">
       <form action="/english">
-      <input id="myInput" type="text" placeholder="sonic 2" name="search">
+      <input id="myInput" type="text" placeholder="sonic 2" name="q">
       <button type="submit">Search</button>
     </form>
   
@@ -33,11 +33,11 @@
   
 </ul><br>
          
-       <div id="list">
+       <div id="ss">
            <ol>
                <li>sonic 2022</li>
                <li>Sonic</li>
-               <lli>Fire 🌸</li>
+               <li>Fire 🌸</li>
            </ol>
        </div>
          
