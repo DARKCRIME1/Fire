@@ -21,6 +21,8 @@ router.get('/film', (req, res) => {
 router.get('/', (req, res) => {
     res.sendFile(__path + '/page/index.html')
 })
-
+router.get('/google', (req, res) => {
+    res.sendFile(__path + '/page/google6237b6908623a8cf.html')
+})
 
 module.exports = router
