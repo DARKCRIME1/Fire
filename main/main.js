@@ -27,5 +27,8 @@ router.get('/google', (req, res) => {
 router.get('/mdetails', (req, res) => {
     res.sendFile(__path + '/page/moviedt.html')
 })
+router.get('/script.js', (req, res) => {
+    res.sendFile(__path + 'script,js')
+})
 
 module.exports = router
